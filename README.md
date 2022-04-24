@@ -1,6 +1,6 @@
 # PowerApps-Samples
 ## [HomeInspections](https://github.com/MichelLaplane/PowerApps-Samples/tree/main/HomeInspections)
 
-A sample app for Managing offline scenarios comming from Matthew Devaney Blog https://www.matthewdevaney.com/
+A sample app for Managing offline scenarios coming from Matthew Devaney Blog https://www.matthewdevaney.com/power-apps-offline-mode-a-step-by-step-tutorial/
 
 ![HomeInspections](https://github.com/MichelLaplane/PowerApps-Samples/raw/main/HomeInspections/Images/Gallery%20Browse.png)
