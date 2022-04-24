@@ -12,5 +12,5 @@ Admin screen
 
 ![HomeInspections](https://github.com/MichelLaplane/PowerApps-Samples/raw/main/HomeInspections/Images/Admin%20screen.png)
 
-## Installation of the App.
+### Installation of the App.
 
