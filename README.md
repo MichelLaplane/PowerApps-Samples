@@ -10,4 +10,4 @@ Gallery screen
 
 Admin screen
 
-![HomeInspections](https://github.com/MichelLaplane/PowerApps-Samples/raw/main/HomeInspections/Images/Gallery%20Browse.png)
+![HomeInspections](https://github.com/MichelLaplane/PowerApps-Samples/raw/main/HomeInspections/Images/Admin%20screen.png)
