@@ -5,12 +5,12 @@ A sample app for Managing offline scenarios coming from Matthew Devaney Blog htt
 
 Gallery screen
 
-![HomeInspections](https://github.com/MichelLaplane/PowerApps-Samples/raw/main/HomeInspections/Images/Gallery%20Browse.png)
+![HomeInspections](https://github.com/MichelLaplane/PowerApps-Samples/raw/main/HomeInspections/Images/)
 
 
 Admin screen
 
-![HomeInspections](https://github.com/MichelLaplane/PowerApps-Samples/raw/main/HomeInspections/Images/Admin%20screen.png)
+![HomeInspections](https://github.com/MichelLaplane/PowerApps-Samples/raw/main/HomeInspections/Images/)
 
 ### Installation of the App :
 
