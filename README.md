@@ -22,7 +22,7 @@ You need to create a list named "Home Inspections" on your SharePoint Online sit
   - Assigned To (single-line text)
   - Report (multiple-line text)
 
-After importing the .msapps file you will have to create a SharePoint list connection to this list. Be aware that the Data Source must have the namem of the SharePointList :  "Home Inspections"
+After importing the .msapps file you will have to create a SharePoint list connection to this list. Be aware that the Data Source must have the name of the SharePointList :  "Home Inspections"
 
 
 
