@@ -1,3 +1,3 @@
 # PowerApps-Samples
-## [HomeInspections]
+## [HomeInspections](https://github.com/MichelLaplane/PowerApps-Samples/tree/main/HomeInspections)
 A sample app
