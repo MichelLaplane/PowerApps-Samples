@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2020/02/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.24.2008.1, Culture=neutral, PublicKeyToken=5e633289e95c321a" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-7F36BA9775C24EA2AB0B95F942268DF1">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-7F36BA9775C24EA2AB0B95F942268DF1" Version="1" BaseSiteTemplate="GROUP#0" Scope="RootSite">
+      <pnp:Lists>
+        <pnp:ListInstance Title="Home Inspections" Description="" DocumentTemplate="" OnQuickLaunch="true" TemplateType="100" Url="Lists/Home Inspections" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="50" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Home Inspections/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Home Inspections/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Home Inspections/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{19565E36-CC54-481E-803A-C2015857BBC0}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/Home Inspections/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query />
+              <ViewFields>
+                <FieldRef Name="OfflineID" />
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Address" />
+                <FieldRef Name="StartTime" />
+                <FieldRef Name="Report" />
+                <FieldRef Name="ID" />
+                <FieldRef Name="AssignedTo" />
+                <FieldRef Name="InventoryImage" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+              <CustomFormatter />
+              <ViewData />
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field DisplayName="OfflineID" Format="Dropdown" MaxLength="255" Name="OfflineID" Title="OfflineID" Type="Text" ID="{112a3cf6-d627-424b-b6de-5274027142bb}" SourceID="{{listid:Home Inspections}}" StaticName="OfflineID" ColName="nvarchar4" RowOrdinal="0" Version="2" />
+            <Field DisplayName="Address" Format="Dropdown" MaxLength="255" Name="Address" Title="Address" Type="Text" ID="{7534a8ca-f6da-4094-9d04-c661d9db94bf}" SourceID="{{listid:Home Inspections}}" StaticName="Address" ColName="nvarchar5" RowOrdinal="0" Version="2" />
+            <Field DisplayName="StartTime" FriendlyDisplayFormat="Disabled" Format="DateOnly" Name="StartTime" Title="StartTime" Type="DateTime" ID="{dff6749a-7cd2-4fa7-819f-fa27d12a3ead}" SourceID="{{listid:Home Inspections}}" StaticName="StartTime" ColName="datetime1" RowOrdinal="0" Version="2" />
+            <Field AppendOnly="FALSE" DisplayName="Report " Format="Dropdown" IsolateStyles="FALSE" Name="Report" RichText="FALSE" RichTextMode="Compatible" Title="Report " Type="Note" ID="{a2cc4db4-9785-4ba3-a9c7-e2eef4def3da}" SourceID="{{listid:Home Inspections}}" StaticName="Report" ColName="ntext2" RowOrdinal="0" Version="2" />
+            <Field Type="Lookup" DisplayName="AssignedTo" Required="FALSE" EnforceUniqueValues="FALSE" List="{listid:Inspector}" ShowField="Name" UnlimitedLengthInDocumentLibrary="FALSE" RelationshipDeleteBehavior="None" ID="{023a9788-792e-4211-99a8-056c0fea52eb}" SourceID="{{listid:Home Inspections}}" StaticName="AssignedTo" Name="AssignedTo" ColName="int1" RowOrdinal="0" Version="2" />
+            <Field Type="Note" DisplayName="InventoryImage" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" NumLines="1000" RichText="FALSE" RichTextMode="Compatible" IsolateStyles="FALSE" Sortable="FALSE" ID="{686f5e23-10f6-49e3-93ed-4db6f0842a06}" SourceID="{{listid:Home Inspections}}" StaticName="InventoryImage" Name="InventoryImage" ColName="ntext3" RowOrdinal="0" CustomFormatter="" RestrictedMode="TRUE" AppendOnly="FALSE" Version="3" />
+          </pnp:Fields>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Inspector" Description="Inspector of Home inspectors" DocumentTemplate="" OnQuickLaunch="true" TemplateType="100" Url="Lists/Inspector" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="50" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Inspector/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Inspector/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Inspector/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{A3FE60E6-871F-4005-A9EB-EC3BD44134F5}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/Inspector/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query />
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Name" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+              <CustomFormatter />
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field DisplayName="Name" Format="Dropdown" IsModern="TRUE" MaxLength="255" Name="Name" Title="Name" Type="Text" ID="{85d5998d-b206-4b64-99bf-8c41f108daba}" SourceID="{{listid:Inspector}}" StaticName="Name" ColName="nvarchar4" RowOrdinal="0" />
+          </pnp:Fields>
+        </pnp:ListInstance>
+      </pnp:Lists>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>
