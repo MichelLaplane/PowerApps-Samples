@@ -3,12 +3,12 @@
 
 A sample app for Managing offline scenarios coming from Matthew Devaney Blog https://www.matthewdevaney.com/power-apps-offline-mode-a-step-by-step-tutorial/
 
-### Gallery screen
+## Gallery screen
 
 ![HomeInspections](https://github.com/MichelLaplane/PowerApps-Samples/raw/main/HomeInspections/Images/Gallery%20Browse.png)
 
 
-### Admin screen
+## Admin screen
 
 ![HomeInspections](https://github.com/MichelLaplane/PowerApps-Samples/raw/main/HomeInspections/Images/Admin%20screen%2002.png)
 
@@ -22,15 +22,28 @@ A sample app for Managing offline scenarios coming from Matthew Devaney Blog htt
 
 ### Installation of the App :
 
-You need to create a list named "Home Inspections" on your SharePoint Online site with the following column as stated on Matthew Devaney Blog :
+You need to create a list named "Inspector" on your SharePoint Online site with the following column :
+  - Title
+  - Name
+
+You need to create a list named "Home Inspections" on your SharePoint Online site with the following column :
 
   - OfflineID (single-line text) holding a Guid
+  - Title
   - Address (single-line text)
   - StartTime (date and time)
-  - Assigned To (single-line text)
   - Report (multiple-line text)
+  - ID (single-line text)
+  - Assigned To (Lookup to Inspector)
+  - Inventoryimage (multiple-line text)
 
-After importing the .msapps file you will have to create a SharePoint list connection to this list. Be aware that the Data Source must have the name of the SharePointList :  "Home Inspections"
+The XML file 'Home Inspections Template.xml' could be use with PNP Powershell script 'ImportListTemplate script.ps1' to create these lists.
+These files are in the installation folder.
+The script can be executed with 'Windows PowerShell ISE' assuming that you have installed 'PNP PowerShell' with the command :
+  "Install-Module -Name "PnP.PowerShell"
+
+After importing the .msapps file you will have to create a SharePoint list connection to the 'Home Inspections' List. 
+Be aware that the Data Source must have the name of the SharePointList :  "Home Inspections"
 
 
 
